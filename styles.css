@@ -2,12 +2,13 @@
 
 body, html{
     height: 100%;
-    background: url("coding4.jpg") no-repeat fixed center;
+    /* background: url("coding4.jpg") no-repeat fixed center; */
+    background-color: white;
     background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
 
-    
+
 }
 
 #flex-container-icon{
@@ -21,7 +22,7 @@ body, html{
     width:auto;
     margin:auto;
     object-fit:contain;
-    
+
     opacity:0;
     top: -2000px;
 }
@@ -38,33 +39,33 @@ width:100%;
 
 
 
-  display: flex; 
-  align-items: center;  
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
- 
+
 
 }
 
 .right{
-    
+
     /*background-color: yellow;*/
-    
+
  width:100%;
  height:100%;
- 
-  display: flex; 
+
+  display: flex;
   align-items: center;  /*Aligns vertically center */
   justify-content: center; /*Aligns horizontally center */
 }
 
 .down{
    /*background-color: pink; */
-   
+
  width:100%;
  height:100%;
- 
-  display: flex; 
+
+  display: flex;
   align-items: center;  /*Aligns vertically center */
   justify-content: center; /*Aligns horizontally center */
 }
@@ -73,8 +74,8 @@ width:100%;
     /*background-color: green;*/
  width:100%;
  height:100%;
- 
-  display: flex; 
+
+  display: flex;
   align-items: center;  /*Aligns vertically center */
   justify-content: center; /*Aligns horizontally center */
 }
@@ -86,12 +87,12 @@ width:100%;
      width:100%;
  height:100%;
  position: relative;
- 
+
 }
 
 .blank{
     /*background-color: black;*/
-    
+
     width:100%;
     height:100%;
 }
@@ -101,7 +102,7 @@ width:100%;
 .imFront {
     object-fit: cover;
     margin: auto;
-    
+
 }
 
 .imUp {
@@ -120,14 +121,14 @@ margin: auto;
     display: none;
 object-fit: cover;
 margin: auto;
-    
+
 }
 
 .imLeft {
     display: none;
 object-fit: cover;
 margin: auto;
-    
+
 }
 
 
@@ -147,21 +148,21 @@ margin: auto;
 
 
 .flex-container{
-    
+
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
 }
 .flex-container2{
-    
+
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
 }
 .flex-container3{
-    
+
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -190,10 +191,10 @@ position: relative !important;
 /*--------------------------------------------------- section up projets*/
 
 #ProjectsMainCont{
-height: 100vh; 
-display:none;  
-position:relative; 
-bottom:100%; 
+height: 100vh;
+display:none;
+position:relative;
+bottom:100%;
 opacity:0;
 }
 
@@ -213,9 +214,9 @@ background-color: #e06900;
 
 #overlayVid1, #overlayVid2, #overlayVid3, #overlayVid4{
     background-color:rgba(12, 110, 207, 0.83);
-    z-index: 3 !important; 
-    text-align:center; 
-    font-family: impact; 
+    z-index: 3 !important;
+    text-align:center;
+    font-family: impact;
     opacity:0;
 }
 
@@ -224,25 +225,25 @@ background-color: #e06900;
 }
 
 .innerProjectSubtitle{
-    font-size: 2rem; 
-    color:white; 
+    font-size: 2rem;
+    color:white;
     font-family:impact;
 }
 
 .textInnerOverlay{
-    color:white; 
+    color:white;
     font-size: 1rem;
 }
 
 
 @media (orientation: portrait) {
-    
+
 .innerProjectSubtitle{
-    font-size: 1rem; 
+    font-size: 1rem;
 }
-    
+
 .textInnerOverlay{
-    color:white; 
+    color:white;
     font-size: 0.5rem;
     font-weight: 400;
 }
