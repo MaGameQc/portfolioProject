@@ -1,0 +1,254 @@
+
+
+body, html{
+    height: 100%;
+    background: url("coding4.jpg") no-repeat fixed center;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    
+}
+
+#flex-container-icon{
+    filter: drop-shadow(0 0 0.80rem black);
+}
+
+.icons{
+    position:relative;
+    display:flex;
+    height: 100%;
+    width:auto;
+    margin:auto;
+    object-fit:contain;
+    
+    opacity:0;
+    top: -2000px;
+}
+
+#butonUp, #butonRight, #butonDown, #butonLeft {
+display: none;
+position: relative;
+}
+
+.up{
+ /*background-color: blue;   */
+width:100%;
+ height:100%;
+
+
+
+  display: flex; 
+  align-items: center;  
+  justify-content: center; 
+
+ 
+
+}
+
+.right{
+    
+    /*background-color: yellow;*/
+    
+ width:100%;
+ height:100%;
+ 
+  display: flex; 
+  align-items: center;  /*Aligns vertically center */
+  justify-content: center; /*Aligns horizontally center */
+}
+
+.down{
+   /*background-color: pink; */
+   
+ width:100%;
+ height:100%;
+ 
+  display: flex; 
+  align-items: center;  /*Aligns vertically center */
+  justify-content: center; /*Aligns horizontally center */
+}
+
+.left{
+    /*background-color: green;*/
+ width:100%;
+ height:100%;
+ 
+  display: flex; 
+  align-items: center;  /*Aligns vertically center */
+  justify-content: center; /*Aligns horizontally center */
+}
+
+#photoContainer{
+    display: none;
+    text-align: center;
+    padding: 0 0;
+     width:100%;
+ height:100%;
+ position: relative;
+ 
+}
+
+.blank{
+    /*background-color: black;*/
+    
+    width:100%;
+    height:100%;
+}
+
+
+
+.imFront {
+    object-fit: cover;
+    margin: auto;
+    
+}
+
+.imUp {
+        display: none;
+object-fit: cover;
+margin: auto;
+}
+
+.imRight {
+display: none;
+object-fit: cover;
+margin: auto;
+}
+
+.imDown {
+    display: none;
+object-fit: cover;
+margin: auto;
+    
+}
+
+.imLeft {
+    display: none;
+object-fit: cover;
+margin: auto;
+    
+}
+
+
+.mainContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    height: 96%;
+    width: 100%;
+    max-width: 100%;
+    margin: 2% auto;
+    /*background-color: rgba(63,142,191, 0.1);*/
+    border-radius: 200px;
+
+}
+
+
+.flex-container{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.flex-container2{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.flex-container3{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*galerie d'image en flex box*/
+
+/*.rowProjet{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.colProjet{*/
+/*    flex: 50%;*/
+/*}*/
+
+.vidProjet{
+position: relative !important;
+
+}
+
+
+/*--------------------------------------------------- section up projets*/
+
+#ProjectsMainCont{
+height: 100vh; 
+display:none;  
+position:relative; 
+bottom:100%; 
+opacity:0;
+}
+
+#projectsTitle{
+background-color: #e06900;
+}
+
+#innerProjectsTitle{
+    font-size: 2rem;
+    color:white;
+    font-family:impact;
+}
+
+#vid1, #vid2, #vid3, #vid4{
+    position:relative;
+}
+
+#overlayVid1, #overlayVid2, #overlayVid3, #overlayVid4{
+    background-color:rgba(12, 110, 207, 0.83);
+    z-index: 3 !important; 
+    text-align:center; 
+    font-family: impact; 
+    opacity:0;
+}
+
+.projectSubtitle{
+    background-color: #e06900;
+}
+
+.innerProjectSubtitle{
+    font-size: 2rem; 
+    color:white; 
+    font-family:impact;
+}
+
+.textInnerOverlay{
+    color:white; 
+    font-size: 1rem;
+}
+
+
+@media (orientation: portrait) {
+    
+.innerProjectSubtitle{
+    font-size: 1rem; 
+}
+    
+.textInnerOverlay{
+    color:white; 
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+}
+
+
+/*tils js url : https://gijsroge.github.io/tilt.js/*/
+
+/*http://www.etiennegodiard.com/*/
