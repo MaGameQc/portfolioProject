@@ -35,17 +35,32 @@ $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
           $(".mainContainer").animate({right :"100%", opacity: "0", display: "none"}, 1800, function(){
               $(this).css("display", "none");
               $("#chooseRight").css("display", "block").animate({left:"0", opacity:"1"}, "slow");
+              $("body, html").css("overflow-y", "auto");
+
+
+              var scenesSelector = document.querySelectorAll('.scene');
+
+              for(i=0; i<scenesSelector.length; i++){
+                  scenes[i] = new Parallax(scenesSelector[i]);
+              }
+
+
           });
+
 
 
               break;
 
 
         case "butonDown":
+
           $(".mainContainer").animate({bottom :"100%", opacity: "0"}, 1800, function(){
               $(this).css("display", "none");
                 $("#chooseDown").css("display", "block").animate({top:"0", opacity:"1"}, "slow");
+
           });
+
+
 
               break;
 
@@ -55,7 +70,7 @@ $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
               $(this).css("display", "none");
               $("#chooseLeft").css("display", "block").animate({right:"0", opacity:"1"}, "slow");
           });
-
+            window.location.href='https://github.com/MaGameQc?tab=repositories';
               break;
 
 
@@ -150,10 +165,30 @@ $(document).ready(function(){
 
 
 
+//
+// var scene = document.getElementById('scene2');
+// var parallaxInstance = new Parallax(scene2);
 
-var scene = document.getElementById('scene2');
-var parallaxInstance = new Parallax(scene2);
+var scenes = [];
+var scenesSelector = document.querySelectorAll('.scene');
+
+for(i=0; i<scenesSelector.length; i++){
+    scenes[i] = new Parallax(scenesSelector[i]);
+}
+
+// function scenesDisable(){
+//     for(i=0; i<scenes.length; i++){
+//         scenes[i].disable();
+//     }
+// }
+//
+// function scenesEnable(){
+//     for(i=0; i<scenes.length; i++){
+//         scenes[i].enable();
+//     }
+// }
 });
+
 
 
 
@@ -185,7 +220,6 @@ $(".right").hover(function(){
     // $(this).css("background-color", "red");
     $(".imRight").css({"display" : "block", "object-fit" : "cover"});
     $(".imFront").css("display", "none");
-
 
 
 
