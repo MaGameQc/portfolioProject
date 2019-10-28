@@ -238,8 +238,8 @@
     <div class="col-12 h-100">
       <div class="row h-100">
 
-        <div class="col-md-7 d-flex" style="  ">
-          <div class="container-fluid align-self-end p-0" style="">
+        <div class="col-md-7 d-flex" style=" position:relative; ">
+          <div class="container-fluid align-self-end p-0" id="textContainer" style="z-index:2; width: 120%; position:absolute;">
             <div class="rounded-pill ml-2 my-2 d-flex justify-content-center flex-md-fill" style="background-color: #e06900; display: inline-block !important;">
               <p class="px-3 mx-auto" style="color:white; font-size: 2.5rem; font-weight:600; font-family:impact;">
                 Rien d'impossible !
@@ -259,7 +259,10 @@
 
         </div>
 
-        <img src="profil.png" class=" col-md-5 p-0 " style="border: 0; bottom:0; position:relative; width:110%;" alt="Responsive image">
+<div class="col-md-5 d-flex" style="position:relative;">
+  <img src="profil.png" class=" col p-0 " style="border: 0; bottom:0; position:relative;" alt="Responsive image">
+</div>
+
 
 
       </div>

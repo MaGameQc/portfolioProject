@@ -249,6 +249,12 @@ background-color: #e06900;
 }
 }
 
+@media(orientation: portrait){
+  #textContainer{
+    width:100% !important;
+    position:relative !important;
+    }
+  }
 
 /*tils js url : https://gijsroge.github.io/tilt.js/*/
 
