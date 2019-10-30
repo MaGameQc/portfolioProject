@@ -258,6 +258,13 @@ background-color: #e06900;
     }
   }
 
+  .icons2Container .icons2{
+    text-shadow: 0 0 0.8rem #404040;
+  }
+
+.icons2Container .contactIcons2Text{
+  opacity:0;
+}
 
 
 /*tils js url : https://gijsroge.github.io/tilt.js/*/

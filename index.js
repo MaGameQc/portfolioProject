@@ -65,6 +65,7 @@ $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
                 for(i=0; i < nbOfIcons2; i++){
                 $(".icons2").delay(800).eq(i).animate({ opacity: "1", top :"0"}, 175).delay(300, function(){
                 $(this).addClass("animated bounce");
+                $(".contactIcons2Text").delay(2400).animate({opacity:"1"}, "slow");
                 });
                 }
 
