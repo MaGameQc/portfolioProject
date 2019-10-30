@@ -15,7 +15,7 @@ body, html{
     filter: drop-shadow(0 0 0.80rem black);
 }
 
-.icons{
+.icons, .icons2{
     position:relative;
     display:flex;
     height: 100%;
@@ -26,6 +26,8 @@ body, html{
     opacity:0;
     top: -2000px;
 }
+
+
 
 #butonUp, #butonRight, #butonDown, #butonLeft {
 display: none;

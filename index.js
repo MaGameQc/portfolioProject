@@ -7,6 +7,7 @@ const nbOfIcons = $(".icons").length;
 
 
 
+
 // section button clicked ---------------------------
 $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
    switch($(this).attr("id")){
@@ -58,8 +59,18 @@ $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
               $(this).css("display", "none");
                 $("#chooseDown").css("display", "block").animate({top:"0", opacity:"1"}, "slow");
 
-          });
 
+                // l'animation des icones dans contact va se lancer ici
+                const nbOfIcons2 = $(".icons2").length;
+                for(i=0; i < nbOfIcons2; i++){
+                $(".icons2").delay(800).eq(i).animate({ opacity: "1", top :"0"}, 175).delay(300, function(){
+                $(this).addClass("animated bounce");
+                });
+                }
+
+
+
+          });
 
 
               break;
