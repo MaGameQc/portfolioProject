@@ -255,7 +255,22 @@ background-color: #e06900;
   #textContainer{
     width:100% !important;
     position:relative !important;
+    padding:0 !important;
+    margin:0 !important;
     }
+
+    #roundPillTitleContact{
+      font-size: 1.5rem !important;
+    }
+
+    #contactTextContent{
+      font-size:0.8rem !important;
+      margin: 0px !important;
+    }
+  }
+
+  #photoProfilContact{
+    object-fit: contain;
   }
 
   .icons2Container .icons2{

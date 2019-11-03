@@ -58,6 +58,7 @@ $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
           $(".mainContainer").animate({bottom :"100%", opacity: "0"}, 1800, function(){
               $(this).css("display", "none");
                 $("#chooseDown").css("display", "block").animate({top:"0", opacity:"1"}, "slow");
+                $("body, html").css("overflow-y", "auto");
 
 
                 // l'animation des icones dans contact va se lancer ici
