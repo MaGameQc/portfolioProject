@@ -267,10 +267,11 @@ background-color: #e06900;
       font-size:0.8rem !important;
       margin: 0px !important;
     }
+
   }
 
   #photoProfilContact{
-    object-fit: contain;
+    object-fit: contain !important;
   }
 
   .icons2Container .icons2{
