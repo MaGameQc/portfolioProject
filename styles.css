@@ -251,7 +251,9 @@ background-color: #e06900;
 }
 }
 
-@media(orientation: portrait){
+
+
+@media(max-width: 767.98px){
   #textContainer{
     width:100% !important;
     position:relative !important;
@@ -266,12 +268,14 @@ background-color: #e06900;
     #contactTextContent{
       font-size:0.8rem !important;
       margin: 0px !important;
+      padding: 0px !important;
     }
 
   }
 
   #photoProfilContact{
-    object-fit: contain !important;
+    /* object-fit: contain !important; */
+    filter: drop-shadow(0 0 0.60rem black);
   }
 
   .icons2Container .icons2{
