@@ -100,6 +100,10 @@ $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
 
 $("#vid1").hover(function(){
     $("#overlayVid1").animate({height:"100%", opacity:"1"}, "slow");
+      $(this).click(function(){
+        $("#videoMG")[0].src += "?autoplay=1";
+
+      });
 
 }, function(){
     $("#overlayVid1").animate({height:"0%", opacity:"0"}, "slow");
@@ -108,12 +112,22 @@ $("#vid1").hover(function(){
 $("#vid2").hover(function(){
     $("#overlayVid2").animate({height:"100%", opacity:"1"}, "slow");
 
+      $(this).click(function(){
+        $("#videoBG")[0].src += "?autoplay=1";
+
+      });
+
 }, function(){
     $("#overlayVid2").animate({height:"0%", opacity:"0"}, "slow");
 });
 // -------------------------------------
 $("#vid3").hover(function(){
     $("#overlayVid3").animate({height:"100%", opacity:"1"}, "slow");
+
+    $(this).click(function(){
+      $("#videoBO")[0].src += "?autoplay=1";
+
+    });
 
 }, function(){
     $("#overlayVid3").animate({height:"0%", opacity:"0"}, "slow");
