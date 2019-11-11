@@ -39,11 +39,11 @@ $("#butonLeft, #butonUp, #butonRight, #butonDown").click(function() {
               $("body, html").css("overflow-y", "auto");
 
 
-              var scenesSelector = document.querySelectorAll('.scene');
-
-              for(i=0; i<scenesSelector.length; i++){
-                  scenes[i] = new Parallax(scenesSelector[i]);
-              }
+              // var scenesSelector = document.querySelectorAll('.scene');
+              //
+              // for(i=0; i<scenesSelector.length; i++){
+              //     scenes[i] = new Parallax(scenesSelector[i]);
+              // }
 
 
           });
@@ -171,7 +171,8 @@ $(document).ready(function(){
         }
 
 
-
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
 
 
    });
@@ -182,14 +183,14 @@ $(document).ready(function(){
 //
 // var scene = document.getElementById('scene2');
 // var parallaxInstance = new Parallax(scene2);
-
-var scenes = [];
-var scenesSelector = document.querySelectorAll('.scene');
-
-for(i=0; i<scenesSelector.length; i++){
-    scenes[i] = new Parallax(scenesSelector[i]);
-}
-
+// à garder
+// var scenes = [];
+// var scenesSelector = document.querySelectorAll('.scene');
+//
+// for(i=0; i<scenesSelector.length; i++){
+//     scenes[i] = new Parallax(scenesSelector[i]);
+// }
+// <a garder
 // function scenesDisable(){
 //     for(i=0; i<scenes.length; i++){
 //         scenes[i].disable();
